@@ -1,0 +1,37 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Welcome!
+    </ion-title>
+  </ion-navbar>
+  </ion-header>
+  <ion-content>
+
+  <div id = "box">
+  <h1><img align = "center" width = "90%" margin = "auto" src = "assets/images/rangerlogo.png" alt = "Welcome to the Zoo Ranger Treasure Hunt!"></h1>
+  <p style = "font-size: 1.3em;">The <strong>Zoo Ranger Treasure Hunt</strong> is a digital treasure hunt that uses the GPS services on you phone
+  to send you to various animals throughout the zoo.</p>
+
+  <button (click)="loadInstructions()" ion-button block>Instructions</button>
+  <button (click)="begin()" color = "F00" ion-button block>TAP TO BEGIN THE ADVENTURE</button>
+    <!--<p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+  </p>-->
+  <br/>
+  <h1><strong>YOUR SCORE: {{score}} </strong></h1>
+  <p style="text-align: center">
+  <button style="text-align: center; " (click)="reset()" color = "F00" ion-button >RESET SCORE</button>
+  </p>
+
+    <img style = "display: block" align = "right" margin-right = "10%" src = "assets/images/Saint_Louis_Zoo_logo.png" width = "50%" height = "auto%" alt = "zoo logo">
+    <footer></footer>
+
+    <br/>
+    <br/>
+    <br/>
+
+  </div>
+
+</ion-content>
+<!--style="background-color:#22aa22", background-color:#dd2222-->

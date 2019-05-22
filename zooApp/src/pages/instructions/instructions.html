@@ -1,0 +1,25 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Instructions</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div id = "box">
+  <h1>How to Play</h1>
+  <p>To play, first make sure location services for this app are enabled.  Then, you can start the adventure.
+    Here is how the game works: </p>
+  <ol>
+    <li>The app will give you a hint leading you to a random animal in the zoo.  Your job is to figure out which animal
+      that is, and then find it in the zoo. <br/><strong>Note:</strong> If you think the clue is too hard or cannot find the animal, you can click <em>"Get another clue</em>."</li>
+    <li>When you are within a certain distance from the animal at the zoo, click submit location on the app to guess the location. If you are wrong, you will be prompted
+    to try again.</li>
+    <li>When you get the correct location and animal, you will recieve a congratulatory statement and then be able to view more pictures of the animal. Then, you can continue the hunt with another hint.</li>
+  </ol>
+  <button (click)="begin()" ion-button block>TAP TO BEGIN THE ADVENTURE</button>
+  </div>
+</ion-content>

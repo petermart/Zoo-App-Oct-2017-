@@ -1,0 +1,46 @@
+<!--
+  Generated template for the HintPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Hints</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <div id = "box">
+  <h1>Clue {{clueNumber}}</h1>
+  <h2>The Basics:</h2>
+  <ion-card >
+    <div *ngFor="let dat of table, let i = index">
+      <ion-card-header *ngIf="dat==('Geographical Range') || dat==('Habitat') || dat == ('Scientific Name') || dat == ('Conservation Status')">
+        <span>{{dat}}</span></ion-card-header>
+    <ion-card-content class="item item-text-wrap" *ngIf="!(dat.trim()==('') || dat==('Geographical Range') || dat==('Habitat') || dat == ('Scientific Name') || dat == ('Conservation Status'))">
+        <span>{{dat}}</span></ion-card-content>
+    </div>
+  </ion-card>
+  <h2>Animal Description:</h2>
+  <p *ngFor="let cont of cons">
+   {{cont}}
+  </p>
+  <br/>
+  <!--<button (click)="guessLocation()" color = "F00" ion-button block>GUESS CURRENT LOCATION</button>-->
+  <button style="background-color:#dd2222" (click)="getHint()" color = "F00" ion-button block>Stuck? NEW HINT</button>
+  <!--<p>Your location {{mylat}}, {{mylong}}</p>
+  <p>Exhibit Location:
+    <ion-list>
+      <li *ngFor="let longitude of long">Longitude: {{longitude}}</li>
+      <li *ngFor="let latitude of lat">Latitude: {{latitude}}</li>
+    </ion-list>
+  </p>
+  <p> <br/></p>-->
+  </div>
+</ion-content>
+
+<ion-footer><button (click)="guessLocation()" color = "F00" ion-button block>GUESS CURRENT LOCATION</button></ion-footer>

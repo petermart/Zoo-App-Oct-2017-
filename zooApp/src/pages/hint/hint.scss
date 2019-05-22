@@ -1,0 +1,42 @@
+page-hint {
+  ion-content
+  {
+    //background: 262626;
+    //color: efefef;
+  }
+  body {
+    margin: 0px;
+    padding: 0px;
+    background: #262626;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    font-size: 1.5em;
+    color: #efefef;
+  }
+  h1
+  {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 3em;
+  }
+  .box
+  {
+    margin:auto;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+  p
+  {
+    font-size: 150%;
+    line-height: 1.5em;
+  }
+  ion-card-header, ion-card-title
+  {
+    font-weight: bold;
+  }
+
+
+}
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+
